@@ -42,116 +42,12 @@ The *type* should always be lowercase as shown below.
 ## Usage
 ### Single Linux Instance with 2 second disks
 
-```hcl
-locals {
-  subnet_id = yandex_vpc_subnet.subnet-1.id
-}
+[Single Linux Instance with 2 second disks](examples/linux/README.md)
 
-module "dev" {
-  source       = "github.com/patsevanton/terraform-yandex-compute.git?ref=main"
-  image_family = "ubuntu-2004-lts"
-  subnet_id    = local.subnet_id
-  zone         = var.yc_zone
-  name         = "dev"
-  hostname     = "dev"
-  is_nat       = true
-  description  = "dev"
-  labels = {
-    environment = "development"
-    scope       = "dev"
-  }
-  secondary_disk = {
-    "var" = {
-      "size"        = "1"
-      "auto_delete" = true
-    },
-    "data" = {
-      "size"        = "2"
-      "auto_delete" = true
-    }
-  }
-  depends_on = [yandex_vpc_subnet.subnet-1]
-}
-
-resource "yandex_vpc_network" "network-1" {
-  name = "network1"
-}
-
-resource "yandex_vpc_subnet" "subnet-1" {
-  name           = "subnet1"
-  zone           = var.yc_zone
-  network_id     = yandex_vpc_network.network-1.id
-  v4_cidr_blocks = ["192.168.10.0/24"]
-}
-```
 
 ### Single Windows Instance
 
-```hcl
-data "template_file" "userdata_win" {
-  template = file("user_data.tpl")
-  vars = {
-    windows_password = "password"
-  }
-}
-
-resource "yandex_vpc_network" "network-01" {
-  name = "network-01"
-}
-
-resource "yandex_vpc_subnet" "subnet-01" {
-  name           = "subnet-pdc-01"
-  zone           = "ru-central1-a"
-  network_id     = yandex_vpc_network.network-01.id
-  v4_cidr_blocks = ["192.168.1.0/24"]
-}
-
-locals {
-  subnet_id = yandex_vpc_subnet.subnet-01.id
-}
-
-module "pdc" {
-  source             = "github.com/patsevanton/terraform-yandex-compute.git?ref=main"
-  image_family       = "windows-2022-dc-gvlk"
-  subnet_id          = local.subnet_id
-  zone               = var.yc_zone
-  name               = "pdc"
-  hostname           = "pdc"
-  is_nat             = true
-  description        = "pdc"
-  user-data          = data.template_file.userdata_win.rendered
-  type_remote_exec   = "winrm"
-  user               = "Administrator"
-  password           = "password"
-  https              = true
-  port               = 5986
-  insecure           = true
-  timeout            = "15m"
-  serial-port-enable = 1
-  size               = 50
-  labels = {
-    environment = "development"
-    scope       = "testing"
-  }
-  depends_on = [yandex_vpc_subnet.subnet-01]
-}
-```
-
-#### user_data.tpl:
-```
-<powershell>
-net user Administrator "${windows_password}"
-$chocoInstallScriptUrl  = 'https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1'
-$chocoInstallScript     = Join-Path $env:Temp 'SetupComplete.ps1'
-
-Set-ExecutionPolicy Unrestricted
-
-$downloader = New-Object System.Net.WebClient
-$downloader.DownloadFile($chocoInstallScriptUrl, $chocoInstallScript)
-
-& $chocoInstallScript
-</powershell>
-```
+[Single Windows Instance](examples/windows/README.md)
 
 ## Inputs
 
