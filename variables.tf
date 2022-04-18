@@ -112,6 +112,12 @@ variable "folder_id" {
   default     = ""
 }
 
+variable "service_account_id" {
+  description = "ID of the service account authorized for this instance."
+  type        = string
+  default     = ""
+}
+
 variable "user" {
   description = "User for access to the instance"
   type        = string

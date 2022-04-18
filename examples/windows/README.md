@@ -65,4 +65,3 @@ $downloader.DownloadFile($chocoInstallScriptUrl, $chocoInstallScript)
 & $chocoInstallScript
 </powershell>
 ```
-
