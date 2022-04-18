@@ -86,6 +86,7 @@ The *type* should always be lowercase as shown below.
 | `user`                  | User for access to the instance. If type `"winrm"`, then use  `Administrator`                                                                                                                                                                                                                                           | `string`           | `ubuntu`              |    no    |
 | `user-data`             | User-data parameter for metadata                                                                                                                                                                                                                                                                                        | `string`           | `""`                  |    no    |
 | `zone`                  | Yandex Cloud Zone for provisoned resources                                                                                                                                                                                                                                                                              | `string`           | n/a                   |    no    |
+| service_account_id | ID of the service account authorized for this instance | `string` | n/a | no |
 
 ## Outputs
 

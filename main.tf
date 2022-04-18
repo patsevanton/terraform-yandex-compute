@@ -17,6 +17,7 @@ resource "yandex_compute_instance" "this" {
   description = var.description
   hostname    = var.hostname
   folder_id   = var.folder_id
+  service_account_id = var.service_account_id
   labels      = var.labels
 
   resources {
