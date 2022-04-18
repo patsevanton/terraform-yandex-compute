@@ -11,14 +11,14 @@ resource "yandex_compute_disk" "disks" {
 resource "yandex_compute_instance" "this" {
   count = var.instance_count
 
-  name        = var.name
-  platform_id = var.platform_id
-  zone        = var.zone
-  description = var.description
-  hostname    = var.hostname
-  folder_id   = var.folder_id
+  name               = var.name
+  platform_id        = var.platform_id
+  zone               = var.zone
+  description        = var.description
+  hostname           = var.hostname
+  folder_id          = var.folder_id
   service_account_id = var.service_account_id
-  labels      = var.labels
+  labels             = var.labels
 
   resources {
     cores         = var.cores
