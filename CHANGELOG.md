@@ -1,3 +1,14 @@
+# [1.1.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.0.1...v1.1.0) (2022-04-18)
+
+
+### ci
+
+* update subjectPattern in pr-title.yml ([069d751](https://github.com/patsevanton/terraform-yandex-compute/commit/069d7518b6f918521d8ca9ccc21cc55c2337066f))
+
+### feat
+
+* add service_account_id ([c465a33](https://github.com/patsevanton/terraform-yandex-compute/commit/c465a33516450f9bf8cb852660e989faf365c349))
+
 ## [1.0.1](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.0.0...v1.0.1) (2022-04-17)
 
 
