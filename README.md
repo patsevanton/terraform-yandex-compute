@@ -11,12 +11,6 @@ Module is fork repositories:
 |------|---------|
 | terraform | >= 0.13 |
 
-## Providers
-
-| Name | Version |
-|------|---------|
-| yandex | 0.78.0  |
-
 ## Contributing
 
 The following guidelines must be followed by all contributors to this repository. Please review them carefully and do not hesitate to ask for help.
