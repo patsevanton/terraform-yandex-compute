@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.7.0...v1.8.0) (2022-10-14)
+
+
+### feat
+
+* update yandex-cloud/yandex to 0.78.0 ([10c3828](https://github.com/patsevanton/terraform-yandex-compute/commit/10c38289f938ddd3f14b0cb037a9e907167b755d))
+* update yandex-cloud/yandex to 0.78.0 ([5ad7e87](https://github.com/patsevanton/terraform-yandex-compute/commit/5ad7e87416970c5dfd603a51163780438f557209))
+* update yandex-cloud/yandex to 0.78.0 ([c5042b5](https://github.com/patsevanton/terraform-yandex-compute/commit/c5042b5ab51eef90a6b6f723b5e3750dcd6854d1))
+
 # [1.7.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.6.0...v1.7.0) (2022-10-14)
 
 
