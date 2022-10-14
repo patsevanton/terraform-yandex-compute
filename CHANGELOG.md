@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.6.0...v1.7.0) (2022-10-14)
+
+
+### feat
+
+* update actions/checkout to v3 ([bc0a075](https://github.com/patsevanton/terraform-yandex-compute/commit/bc0a0759b5be901106d55724a45ad47a542ad9fa))
+* update yandex-cloud/yandex to 0.77.0 ([b694862](https://github.com/patsevanton/terraform-yandex-compute/commit/b694862968631537e85ea31737a3e0d774f4a63f))
+
 # [1.6.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.5.0...v1.6.0) (2022-10-14)
 
 
