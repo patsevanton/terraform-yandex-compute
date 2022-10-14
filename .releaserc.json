@@ -1,15 +1,15 @@
 {
-  "branches": [
+  "branches":[
     "main",
     "master"
   ],
-  "ci": false,
-  "plugins": [
+  "ci":false,
+  "plugins":[
     [
       "@semantic-release/commit-analyzer",
       {
-        "preset": "ESLint",
-        "releaseRules": [
+        "preset":"ESLint",
+        "releaseRules":[
           {"tag": "breaking", "release": "major"},
           {"tag": "chore", "release": false},
           {"tag": "ci", "release": false},
@@ -26,29 +26,30 @@
     [
       "@semantic-release/release-notes-generator",
       {
-        "preset": "ESLint"
+        "preset":"ESLint"
       }
     ],
     [
       "@semantic-release/github",
       {
-        "successComment": "This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} :tada:",
-        "labels": true,
-        "releasedLabels": true
+        "successComment":"This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} :tada:",
+        "labels":true,
+        "releasedLabels":true
       }
     ],
     [
       "@semantic-release/changelog",
       {
-        "changelogFile": "CHANGELOG.md"
+        "changelogFile":"CHANGELOG.md"
       }
     ],
     "@semantic-release/github",
     [
-      "@semantic-release/git", {
-      "assets": ["CHANGELOG.md"],
-      "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-    }
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md"],
+        "message":"chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
     ]
   ]
 }
