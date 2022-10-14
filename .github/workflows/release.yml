@@ -36,3 +36,4 @@ jobs:
             conventional-changelog-eslint@3.0.9
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
+
