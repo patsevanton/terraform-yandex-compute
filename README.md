@@ -95,3 +95,4 @@ The *type* should always be lowercase as shown below.
 | compute\_instance\_external\_ip | The external IP address of the instance |
 | compute\_instance\_fqdn | The fully qualified DNS name of this instance |
 | compute\_instance\_internal\_ip | The internal IP address of the instance |
+
