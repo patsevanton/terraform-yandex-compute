@@ -15,7 +15,7 @@ Module is fork repositories:
 
 | Name | Version |
 |------|---------|
-| yandex | 0.73.0  |
+| yandex | 0.77.0  |
 
 ## Contributing
 
