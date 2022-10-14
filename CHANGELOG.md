@@ -1,3 +1,14 @@
+## [1.12.1](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.12.0...v1.12.1) (2022-10-14)
+
+
+### ci
+
+* remove duplicate @semantic-release/github ([39ae072](https://github.com/patsevanton/terraform-yandex-compute/commit/39ae072042842e65a162947ed8110b5ae195dc8f))
+
+### refactor
+
+* remove duplicate @semantic-release/github ([dedc12d](https://github.com/patsevanton/terraform-yandex-compute/commit/dedc12daedc5d483acf479016314210f037a4c6f))
+
 # [1.12.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.11.0...v1.12.0) (2022-10-14)
 
 
