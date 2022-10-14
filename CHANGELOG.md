@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.5.0...v1.6.0) (2022-10-14)
+
+
+### feat
+
+* update cycjimmy/semantic-release-action to v3.0.0 ([5f3856f](https://github.com/patsevanton/terraform-yandex-compute/commit/5f3856f75e933cf1cd184ade77403f037124ad32))
+* update cycjimmy/semantic-release-action to v3.1.1 ([708bb6a](https://github.com/patsevanton/terraform-yandex-compute/commit/708bb6adb44f2deabaa8dc32b6159c8e09dba547))
+* update semantic_version to 18 ([11028a7](https://github.com/patsevanton/terraform-yandex-compute/commit/11028a70ceabd9989eac8421762581ed4340be1e))
+
 # [1.5.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.4.0...v1.5.0) (2022-10-14)
 
 
