@@ -1,3 +1,16 @@
+# [1.13.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.12.1...v1.13.0) (2023-01-07)
+
+
+### chore
+
+* remove .releaserc.json-backup ([956f9fb](https://github.com/patsevanton/terraform-yandex-compute/commit/956f9fb0cd6dafe66234ce41443f6abc7367edcd))
+* remove .releaserc.json-backup ([a398236](https://github.com/patsevanton/terraform-yandex-compute/commit/a398236ff0c0e17fd9a733bca341a8c5610f0dec))
+* remove path '**/*.py' ([a1e889d](https://github.com/patsevanton/terraform-yandex-compute/commit/a1e889de9c6633f528cf625e805ba082cea10e29))
+
+### feat
+
+* update yandex-cloud/yandex to 0.81.0 ([a4e57e9](https://github.com/patsevanton/terraform-yandex-compute/commit/a4e57e93b41f151ce519bb05d351a3b260e02cec))
+
 ## [1.12.1](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.12.0...v1.12.1) (2022-10-14)
 
 
