@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.17.0...v1.18.0) (2023-05-20)
+
+
+### feat
+
+* update yandex-cloud/yandex to 0.86.0 ([c8794f7](https://github.com/patsevanton/terraform-yandex-compute/commit/c8794f7615ce98fb7ce972a09de0f9c93642ad55))
+
 # [1.17.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.16.0...v1.17.0) (2023-02-02)
 
 
