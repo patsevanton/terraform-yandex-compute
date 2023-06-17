@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.23.0...v1.24.0) (2023-06-17)
+
+
+### feat
+
+* update pre-commit.yml ([7974e19](https://github.com/patsevanton/terraform-yandex-compute/commit/7974e194f7e055b4ccb27d2d31e497588b554d84))
+
 # [1.23.0](https://github.com/patsevanton/terraform-yandex-compute/compare/v1.22.0...v1.23.0) (2023-05-20)
 
 
